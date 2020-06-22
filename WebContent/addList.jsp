@@ -19,10 +19,12 @@ List<GuestBookVo> gList = bDao.getPersonList();
 <body>
 
 	<form action="./add.jsp" method="post">
-		이름 : <input type="text" name="name"> 비밀번호 : <input
-			type="text" name="password"><br> <input type="text"
-			name="content"><br>
+	<fieldset style = "width:600px">
+		이름 : <input type="text" name="name"> 
+		비밀번호 : <input type="text" name="password"><br> 
+		<input type="text" name="content"><br>
 		<button type="submit">확인</button>
+		</fieldset>
 	</form>
 
 	<%

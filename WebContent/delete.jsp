@@ -10,9 +10,9 @@ int no = Integer.parseInt(request.getParameter("no"));
 String password = request.getParameter("password");
 
 GuestBookDao gDao = new GuestBookDao();
-if(password.equals(gDao.getPassword(no)))
-{
-gDao.guestDelete(no);
-}
+
+gDao.guestDelete(no, password);
+
+/* guestdelete에 인자 2개 넘겨서 no, password 둘다 만족 */
 response.sendRedirect("addList.jsp");
 %>
