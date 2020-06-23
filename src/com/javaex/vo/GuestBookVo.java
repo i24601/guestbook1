@@ -3,17 +3,7 @@ package com.javaex.vo;
 public class GuestBookVo {
 
 	private int number;
-	private String name, password, content, reg_date;
-	
-	public GuestBookVo(int number, String name, String password, String content, String reg_date) {
-		this.number = number;
-		this.name = name;
-		this.password = password;
-		this.content = content;
-		this.reg_date = reg_date;
-	}
-	
-	
+	private String name, password, content, reg_date;	
 
 	public GuestBookVo(int number, String name, String content, String reg_date) {
 		this.number = number;
